@@ -1,10 +1,14 @@
 import React from "react";
+import "./Home.scss"
+import {Visibility} from "semantic-ui-react";
 
-const Home = () => {
+const Home = ({setActiveItem}) => {
     return (
-        <div id="home">
-            Home
-        </div>
+        <Visibility onBottomVisible={()=>{setActiveItem('about')}}>
+            <section id="home" className="home-section">
+                Home
+            </section>
+        </Visibility>
     );
 };
 export default Home;

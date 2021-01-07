@@ -23,7 +23,7 @@ function App() {
         }
     };
     return (
-        <div style={{minHeight: "100vh"}} onClick={closeNav}>
+        <div className="page animated" onClick={closeNav}>
             <Navbar
                 activeItem={activeItem}
                 setActiveItem={setActiveItem}

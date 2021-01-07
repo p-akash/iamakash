@@ -9,7 +9,7 @@ const DesktopNavbar = (props) => {
             <p className="cd-nav-trigger">
                 <span aria-hidden="true"/>
             </p>
-            <ul className="stretchy-nav">
+            <ul className={`stretchy-nav ${activeItem}`}>
                 <li className={`${activeItem === "home" && "active"}`}>
                     <p onClick={() => setActiveItem("home")}>
                         <span>Home</span></p></li>
@@ -23,8 +23,9 @@ const DesktopNavbar = (props) => {
                     <p onClick={() => setActiveItem("portfolio")}>
                         <span>Contact</span></p>
                 </li>
-                <li className={`${activeItem === "portfolio" && "active"}`}>
-                    <p onClick={() => setActiveItem("portfolio")}><span>Blog</span></p></li>
+                {/*<li className={`${activeItem === "portfolio" && "active"}`}>*/}
+                {/*    <p onClick={() => setActiveItem("portfolio")}><span>Blog</span></p>*/}
+                {/*</li>*/}
             </ul>
             <span aria-hidden="true" className="stretchy-nav-bg"/>
         </div>

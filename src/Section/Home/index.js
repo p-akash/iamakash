@@ -4,6 +4,7 @@ import PrimaryButton from "../../Components/Buttons/PrimaryButton";
 import SecondaryButton from "../../Components/Buttons/SecondaryButton";
 import Icon from "../../Components/Icon";
 import Div100vh from 'react-div-100vh';
+import Typed from 'react-typed';
 
 const Home = () => {
 
@@ -14,7 +15,14 @@ const Home = () => {
                 <div className="landing-text-container">
                     <div className="title">Hi there !</div>
                     <div className="heading">I'M <span className="name">Akash Patel</span></div>
-                    <div className="sub-title">Front End Developer</div>
+                    <div className="sub-title">
+                        <Typed
+                            strings={["Full Stack Developer", "Frontend Developer", "Web Designer", "Web Developer",]}
+                            typeSpeed={40}
+                            backSpeed={50}
+                            loop
+                        />
+                    </div>
                     <div className="btn-container">
                         <PrimaryButton text="about me" icon="fa fa-user" className="margin-x-5"/>
                         <SecondaryButton text="Resume" icon="fa fa-download" className="margin-x-5"/>

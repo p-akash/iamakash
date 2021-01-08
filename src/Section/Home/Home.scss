@@ -12,7 +12,7 @@
 .landing-text-container{
   z-index: 1;
   color: #FFFFFF;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-align: center;
   line-height: normal;
   cursor: pointer;
@@ -37,8 +37,12 @@
   }
   .sub-title{
     font-size: 26px;
+    height: 30px;
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 20px;
+    .typed-cursor{
+      display: none!important;
+    }
   }
   @media only screen and (max-width: 400px) {
     .heading {

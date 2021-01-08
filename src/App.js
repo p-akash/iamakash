@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import Navbar from "./Components/Navbar";
 import Home from "./Section/Home";
 import About from "./Section/AboutMe";
-import './App.css';
 
 function App() {
     const [activeItem, setActiveItem] = useState("home");

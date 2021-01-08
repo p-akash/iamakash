@@ -1,6 +1,4 @@
-/* =================================================================== */
-/* GREEN #72b626
-====================================================================== */
+@import "_variables.scss";
 .nav-container > div > ul li.active p,
 .nav-container > div > ul li:hover p,
 .btn.btn-secondary,
@@ -27,13 +25,13 @@ body.blog.dark .comments-list .comment-reply:hover,
 .resume-items .item .card-header .year i.fa-caret-right,
 .badges h3 span,
 .chart-bar>.percent {
-    color: #72b626;
+    color: $color_primary;
 }
 .cd-stretchy-nav.nav-is-visible ul li.active p,
 .cd-stretchy-nav.nav-is-visible ul li.active p span,
 .cd-stretchy-nav.nav-is-visible ul li p:hover,
 .cd-stretchy-nav.nav-is-visible ul li p:hover span {
-    color: #72b626 !important;
+    color: $color_primary !important;
 }
 .chart-bar>.item-progress,
 .navigation li > div p span:after,
@@ -62,41 +60,41 @@ section#blog .post-date,
 .back-mobile,
 .page-title .title-head-subtitle:before,
 .page-title .title-head-subtitle:after{
-    background-color: #72b626;
+    background-color: $color_primary;
 }
 
 .contact-container ul.social-intro li p,
 .btn.btn-secondary,
 .btn.btn-secondary:focus,
 .chart-bar>.percent {
-    border: 1px solid #72b626;
+    border: 1px solid $color_primary;
 }
 
 .arrow {
-    border: 1px solid #72b626;
+    border: 1px solid $color_primary;
     border-width: 0 1px 1px 0;
 }
 
 .resume-items .item:before {
-    border-left: 1px solid #72b626;
+    border-left: 1px solid $color_primary;
 }
 
 .resume-items .item .bullet{
-    border: 2px solid #72b626;
+    border: 2px solid $color_primary;
 }
 
 .personal-info .image-container:before {
-    border: 6px solid #72b626;
+    border: 6px solid $color_primary;
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active,
 .btn-secondary:not(:disabled):not(.disabled):active {
-    border-color:#72b626;
+    border-color:$color_primary;
 }
 
 body.blog .container-fluid.page-title .content-banner {
-    border-bottom:8px solid #72b626;
+    border-bottom:8px solid $color_primary;
 }
 #portfolio-items li p div {
-    background: #72b626;
+    background: $color_primary;
 }

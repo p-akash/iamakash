@@ -21,10 +21,10 @@ const Home = () => {
                             loop
                         />
                     </div>
-                    {/*<div className="btn-container">*/}
-                    {/*    <PrimaryButton text="about me" icon="fa fa-user" className="margin-x-5"/>*/}
-                    {/*    <SecondaryButton text="Resume" icon="fa fa-download" className="margin-x-5"/>*/}
-                    {/*</div>*/}
+                    <div className="btn-container">
+                        <PrimaryButton text="about me" icon="fa fa-user" className="margin-x-5"/>
+                        <SecondaryButton text="Resume" icon="fa fa-download" className="margin-x-5"/>
+                    </div>
                 </div>
                 <div className="landing-social-container">
                     <Icon icon="fa fa-linkedin" iconLink="https://www.linkedin.com/in/akash-a-patel"/>

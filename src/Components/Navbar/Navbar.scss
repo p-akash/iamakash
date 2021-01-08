@@ -266,6 +266,20 @@
     animation-delay: 0.25s;
   }
 
+  @media only screen and (max-width: 400px) {
+    .cd-stretchy-nav{
+      top: 15px;
+      left: 15px;
+    }
+    .cd-nav-trigger{
+      height: 45px;
+      width: 45px;
+    }
+    .cd-stretchy-nav .stretchy-nav-bg{
+      height: 45px;
+      width: 45px;
+    }
+}
 
   /* --------------------------------
 

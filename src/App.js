@@ -24,12 +24,12 @@ function App() {
     };
     return (
         <Div100vh onClick={closeNav}>
-            {/*<Navbar*/}
-            {/*    activeItem={activeItem}*/}
-            {/*    setActiveItem={setActiveItem}*/}
-            {/*    isOpenNavBar={isOpenNavBar}*/}
-            {/*    setIsOpenNavBar={setIsOpenNavBar}*/}
-            {/*/>*/}
+            <Navbar
+                activeItem={activeItem}
+                setActiveItem={setActiveItem}
+                isOpenNavBar={isOpenNavBar}
+                setIsOpenNavBar={setIsOpenNavBar}
+            />
             {section()}
         </Div100vh>
 

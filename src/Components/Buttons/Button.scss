@@ -40,6 +40,16 @@
   width: 180%;
 }
 
+.btn:hover {
+  box-shadow: none;
+  color: #fff;
+}
+
+.btn i {
+  padding-right: 11px;
+}
+
+
 .btn.btn-secondary {
   color: #555;
 }
@@ -57,14 +67,6 @@
   background: #555;
 }
 
-.btn i {
-  padding-right: 11px;
-}
-
-.btn:hover {
-  box-shadow: none;
-  color: #fff;
-}
 
 
 

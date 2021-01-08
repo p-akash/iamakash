@@ -2,6 +2,8 @@
 @import "green";
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import "animation";
+
 
 *,
 *:after,
@@ -29,4 +31,20 @@ ul {
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
+}
+
+.margin-x-5{
+  margin-left: $fs_5;
+  margin-right: $fs_5;
+}
+
+.page-animation{
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+.animate-page {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }

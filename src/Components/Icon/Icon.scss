@@ -1,0 +1,42 @@
+@import "../../assets/css/variables";
+.icon-box{
+  display: inline-block;
+  position: relative;
+  margin: 0 5px;
+  border: $color_primary 1px solid;
+  font-size: 14px;
+  color: $color_primary;
+  padding: 2px 8px;
+  border-radius: 8px;
+  z-index: 2;
+  overflow: hidden;
+}
+.icon-box i {
+  position: relative;
+  z-index: 2;
+}
+.icon-box:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  height: 102%;
+  left: -25%;
+  width: 0;
+  background-color: $color_primary;
+  transform: skew(-22deg);
+  transition-duration: .6s;
+  //z-index: 1;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .icon-box:hover:before {
+    width: 180%;
+  }
+
+  .icon-box:hover {
+    box-shadow: none;
+    color: #fff;
+  }
+
+}
+

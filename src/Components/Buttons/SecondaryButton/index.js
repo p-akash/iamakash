@@ -2,9 +2,9 @@ import React from "react";
 import "../Button.scss";
 
 const SecondaryButton = (props) => {
-    const {text, onClick, icon} = props
+    const {text, onClick, icon, className} = props
     return (
-        <p onClick={onClick} className="btn btn-secondary link-portfolio-two">
+        <p onClick={onClick} className={`btn btn-secondary ${className}`}>
             <span>
                {icon && <i className={icon}/>}
                 {text}

@@ -2,17 +2,14 @@ import React from "react";
 import "../Button.scss";
 
 const PrimaryButton = (props) => {
-    const {text, onClick, icon} = props
+    const {text, onClick, icon, className} = props
     return (
-        <div className="primary-btn">
-            <p onClick={onClick} className="btn link-portfolio-one">
+            <p onClick={onClick} className={`btn link-portfolio-one ${className}`}>
             <span>
                  {icon && <i className={icon}/>}
                 {text}
             </span>
             </p>
-        </div>
-
     );
 };
 

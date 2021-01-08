@@ -23,7 +23,7 @@ function App() {
         }
     };
     return (
-        <div className="page animated" onClick={closeNav}>
+        <div onClick={closeNav}>
             <Navbar
                 activeItem={activeItem}
                 setActiveItem={setActiveItem}

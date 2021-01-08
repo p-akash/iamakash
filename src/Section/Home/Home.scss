@@ -1,61 +1,35 @@
 
-main#main {
+.bg-image {
   position: absolute;
-  width: 100%;
-  overflow: hidden;
-  height: 100%;
-}
-
-#main>section {
-  position: absolute;
-  top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-transform: translate3d(100%,0,0);
-  transform: translate3d(100%,0,0);
-  z-index: 0;
-  opacity: 0;
-  background: #fff;
-  -webkit-transition: opacity 0s ease .6s,-webkit-transform .6s ease .6s;
-  transition: transform .6s ease .6s,opacity 0s ease .6s,-webkit-transform .6s ease .6s;
-}
-
-.bgimage #main>section#home {
+  right: 0;
+  bottom: 0;
+  top: 0;
   background-image: url('../../assets/images/large-bg.jpg');
+  background-color: #2d3436;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.bgimage #main>section#home:after{
+.bg-image:after {
   content: '';
   position: absolute;
-  background-color: rgba(0,0,0,.89);
   left: 0;
   right: 0;
   bottom: 0;
   top: 0;
-  z-index: 0;
+  background: rgba(0,0,0,0.87);
 }
 
-#main>section.active {
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  z-index: 1;
-  opacity: 1;
-  -webkit-transition: -webkit-transform .6s ease;
-  transition: -webkit-transform .6s ease;
-  transition: transform .6s ease,-webkit-transform .6s ease;
-}
+
 .container{
-  z-index: 5;
+  z-index: 1;
   position: absolute;
   color: #FFFFFF;
   top: 30%;
   left: 50%;
+  width: 100%;
   transform: translate(-50%);
   text-transform: uppercase;
   text-align: center;
@@ -75,12 +49,29 @@ main#main {
   position: relative;
   font-family: Poppins, 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: 500;
+  margin-bottom: 5px;
 }
 .name{
   color: #72b626;
   font-weight: 700;
 }
-
+.sub-title{
+  font-size: 26px;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 400px) {
+  .heading {
+    font-size: 34px;
+  }
+  .sub-title {
+    font-size: 20px;
+  }
+}
+//.btn-container{
+//  display: flex;
+//  justify-content: center;
+//}
 
 
 

@@ -1,22 +1,21 @@
 import React from "react";
 import "./Home.scss"
-import {Visibility} from "semantic-ui-react";
+import PrimaryButton from "../../Components/Buttons/PrimaryButton";
+import SecondaryButton from "../../Components/Buttons/SecondaryButton";
 
-const Home = ({setActiveItem}) => {
+const Home = () => {
     return (
-        <div className="light dark-header bgimage">
-            <main id="main">
-                <section id="home" className="active">
-                    <div className="container">
-                        <div className="title">Hi there !</div>
-                        <div className="heading">I'M <span className="name">Akash Patel</span></div>
-                        <div className="sub-title">Front End Developer</div>
-                        <div className="about-me">I Front end developer base in surat India</div>
-                    </div>
-                </section>
-            </main>
-        </div>
-
+        <section id="home" className="bg-image">
+            <div className="container">
+                <div className="title">Hi there !</div>
+                <div className="heading">I'M <span className="name">Akash Patel</span></div>
+                <div className="sub-title">Front End Developer</div>
+                <div className="btn-container">
+                    <PrimaryButton text="about me" icon="fa fa-user"/>
+                    <SecondaryButton text="Resume" icon="fa fa-download"/>
+                </div>
+            </div>
+        </section>
     );
 };
 export default Home;

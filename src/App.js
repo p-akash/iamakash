@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import Navbar from "./Components/Navbar";
 import Home from "./Section/Home";
 import About from "./Section/AboutMe";
+import Div100vh from "react-div-100vh";
 
 function App() {
     const [activeItem, setActiveItem] = useState("home");
@@ -22,7 +23,7 @@ function App() {
         }
     };
     return (
-        <div onClick={closeNav}>
+        <Div100vh onClick={closeNav}>
             <Navbar
                 activeItem={activeItem}
                 setActiveItem={setActiveItem}
@@ -30,7 +31,8 @@ function App() {
                 setIsOpenNavBar={setIsOpenNavBar}
             />
             {section()}
-        </div>
+        </Div100vh>
+
     );
 }
 

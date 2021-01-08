@@ -49,3 +49,30 @@ h1,h2,h3,h4,h5,h6 {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+
+.text-center{
+  text-align: center;
+}
+.mt-10{
+  margin-top: 10px;
+}
+.mt-55{
+  margin-top: 55px;
+}
+.mb-10{
+  margin-bottom: 10px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.font-50{
+  font-size: 50px;
+}
+.font-poppins{
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-secondary{
+  color: $color_secondary;
+}

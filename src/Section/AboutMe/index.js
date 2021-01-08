@@ -1,16 +1,11 @@
 import React from "react";
 import "./AboutMe.scss"
-import {Visibility} from "semantic-ui-react";
 
-const About = ({setActiveItem}) => {
+const About = () => {
     return (
-        <Visibility onTopVisible={() => {
-            setActiveItem('home')
-        }}>
-            <section id="about" className="about-me-section">
-                About
-            </section>
-        </Visibility>
+        <section id="about" className="about-me-section">
+               <div className="text-center mt-55 mb-50 font-50 font-poppins text-secondary">About Me</div>
+        </section>
     );
 };
 export default About;

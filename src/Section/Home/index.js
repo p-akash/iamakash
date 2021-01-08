@@ -3,13 +3,11 @@ import "./Home.scss"
 import PrimaryButton from "../../Components/Buttons/PrimaryButton";
 import SecondaryButton from "../../Components/Buttons/SecondaryButton";
 import Icon from "../../Components/Icon";
-import Div100vh from 'react-div-100vh';
 import Typed from 'react-typed';
 
 const Home = () => {
 
     return (
-        <Div100vh>
             <section id="home" className="bg-image">
                 <div/>
                 <div className="landing-text-container">
@@ -35,7 +33,6 @@ const Home = () => {
                     <Icon icon="fa fa-instagram" iconLink="https://www.instagram.com/iamakashpatel"/>
                 </div>
             </section>
-        </Div100vh>
     );
 };
 export default Home;

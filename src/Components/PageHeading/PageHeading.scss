@@ -1,0 +1,75 @@
+@import "../../assets/css/variables";
+
+.page-heading {
+  text-align: center;
+
+  .page-title {
+    font-size: 55px;
+    z-index: 0;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    color: $color_secondary;
+
+    .colored-text {
+      color: $color-primary;
+    }
+
+    .page-subtitle {
+      display: inline-block;
+      text-transform: none;
+      text-align: center;
+      font-size: 15px;
+      color: $color_secondary;
+      margin: 20px 0 0;
+      opacity: .8;
+      font-family: 'Open Sans', sans-serif;
+    }
+  }
+
+  .page-subtitle {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    color: $color_secondary;
+    margin: 10px 0 0;
+    position: relative;
+    opacity: .8;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .page-subtitle:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    right: -50px;
+    top: 11px;
+    width: 30px;
+    background-color: $color_primary;
+  }
+
+  .page-subtitle:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    left: -50px;
+    top: 11px;
+    background-color: $color_primary;
+    width: 30px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .page-subtitle{
+      font-size: 12px;
+      font-weight: 400;
+      margin: 6px 0 0;
+    }
+    .page-title {
+      font-size: 42px;
+      font-weight: 800;
+    }
+
+  }
+}

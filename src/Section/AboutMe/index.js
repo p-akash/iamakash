@@ -1,10 +1,13 @@
 import React from "react";
 import "./AboutMe.scss"
+import PageHeading from "../../Components/PageHeading";
+import Logo from "../../Components/Logo";
 
 const About = () => {
     return (
         <section id="about" className="about-me-section">
-               <div className="text-center mt-55 mb-50 font-50 font-poppins text-secondary">About Me</div>
+                <Logo/>
+               <PageHeading text1="About" text2="Me" subtitle="I am web developer"/>
         </section>
     );
 };

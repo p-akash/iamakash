@@ -2,7 +2,9 @@ import React, {useState} from "react";
 import Navbar from "./Components/Navbar";
 import Home from "./Section/Home";
 import About from "./Section/AboutMe";
-import Div100vh from "react-div-100vh";
+import Portfolio from "./Section/Portfolio";
+import Contact from "./Section/Contact";
+
 
 function App() {
     const [activeItem, setActiveItem] = useState("home");
@@ -12,7 +14,11 @@ function App() {
             case "home":
                 return <Home setActiveItem={setActiveItem}/>;
             case "about":
-                return <About setActiveItem={setActiveItem}/>
+                return <About setActiveItem={setActiveItem}/>;
+            case "portfolio":
+                return <Portfolio setActiveItem={setActiveItem}/>;
+            case "contact":
+                return <Contact setActiveItem={setActiveItem}/>;
             default:
                 return <Home/>;
         }
@@ -23,7 +29,7 @@ function App() {
         }
     };
     return (
-        <Div100vh onClick={closeNav}>
+        <div onClick={closeNav}>
             <Navbar
                 activeItem={activeItem}
                 setActiveItem={setActiveItem}
@@ -31,7 +37,7 @@ function App() {
                 setIsOpenNavBar={setIsOpenNavBar}
             />
             {section()}
-        </Div100vh>
+        </div>
 
     );
 }

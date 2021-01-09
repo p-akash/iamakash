@@ -21,8 +21,8 @@ const Navbar = (props) => {
                     <li className={`${activeItem === "portfolio" && "active"}`}>
                         <p onClick={() => setActiveItem("portfolio")}>
                             <span>Portfolio</span></p></li>
-                    <li className={`${activeItem === "portfolio" && "active"}`}>
-                        <p onClick={() => setActiveItem("portfolio")}>
+                    <li className={`${activeItem === "contact" && "active"}`}>
+                        <p onClick={() => setActiveItem("contact")}>
                             <span>Contact</span></p>
                     </li>
                     {/*<li className={`${activeItem === "portfolio" && "active"}`}>*/}

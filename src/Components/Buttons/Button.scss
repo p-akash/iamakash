@@ -1,4 +1,4 @@
-
+@import "../../assets/css/variables";
 .btn {
   box-shadow: none !important;
   border-radius: 12px;
@@ -7,7 +7,7 @@
   line-height: 46px;
   font-size: 15px;
   text-transform: uppercase;
-  color: #fff;
+  color: $color_white;
   padding: 0 33px;
   outline: none !important;
   overflow: hidden;
@@ -30,7 +30,7 @@
   height: 102%;
   left: -25%;
   width: 0;
-  background-color: #555;
+  background-color: $color_secondary;
   transform: skew(-22deg);
   transition-duration: .6s;
   z-index: 1;
@@ -42,7 +42,7 @@
 
 .btn:hover {
   box-shadow: none;
-  color: #fff;
+  color: $color_white;
 }
 
 .btn i {
@@ -51,7 +51,7 @@
 
 
 .btn.btn-secondary {
-  color: #555;
+  color: $color_secondary;
 }
 
 .btn.btn-secondary,
@@ -64,7 +64,7 @@
 }
 
 .btn.btn-secondary:before {
-  background: #555;
+  background: $color_secondary;
 }
 
 

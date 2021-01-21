@@ -1,3 +1,4 @@
+@import "assets/css/variables";
 .main {
   position: absolute;
   width: 100%;
@@ -14,7 +15,7 @@
     overflow-y: auto;
     z-index: 0;
     opacity: 0;
-    background: #fff;
+    background: $color_dark_bg;
     transition: transform .6s ease .6s, opacity 0s ease .6s;
   }
 

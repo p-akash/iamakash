@@ -1,9 +1,7 @@
-
-
-
+@import "../../assets/css/variables";
 .landing-text-container{
   z-index: 1;
-  color: #FFFFFF;
+  color: $color_white;
   text-transform: capitalize;
   text-align: center;
   line-height: normal;
@@ -24,7 +22,7 @@
     margin-bottom: 5px;
   }
   .name{
-    color: #72b626;
+    color: $color_primary;
     font-weight: 700;
   }
   .sub-title{

@@ -6,15 +6,15 @@ import Icon from "../../Components/Icon";
 import Typed from 'react-typed';
 import Div100vh from "react-div-100vh";
 
-const Home = () => {
-
+const Home = (props) => {
+const {setActiveItem}= props;
     return (
         <Div100vh>
             <section id="home" className="bg-image">
                 <div/>
                 <div className="landing-text-container">
                     <div className="title">Hi there !</div>
-                    <div className="heading">I'M <span className="name">Akash Patel</span></div>
+                    <div className="heading">I'm <span className="name">Akash Patel</span></div>
                     <div className="sub-title">
                         <Typed
                             strings={["Full Stack Developer", "Frontend Developer", "Web Designer", "Web Developer",]}
@@ -24,8 +24,18 @@ const Home = () => {
                         />
                     </div>
                     <div className="btn-container">
-                        <PrimaryButton text="about me" icon="fa fa-user" className="margin-x-5"/>
-                        <SecondaryButton text="Resume" icon="fa fa-download" className="margin-x-5"/>
+                        <PrimaryButton
+                            text="about me"
+                            icon="fa fa-user"
+                            className="margin-x-5"
+                            onClick={()=>setActiveItem("about")}
+                        />
+                        <SecondaryButton
+                            text="Resume"
+                            icon="fa fa-download"
+                            className="margin-x-5"
+                            onClick={() => window.open("https://drive.google.com/u/0/uc?id=1m40kIpPss6CcB2AG171DM63bwYQKkCiU&export=download", "_blank")}
+                        />
                     </div>
                 </div>
                 <div className="landing-social-container">

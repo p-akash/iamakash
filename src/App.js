@@ -20,7 +20,7 @@ function App() {
             case "contact":
                 return <Contact setActiveItem={setActiveItem}/>;
             default:
-                return <Home/>;
+                return <Home setActiveItem={setActiveItem}/>;
         }
     };
     const closeNav = () => {

@@ -4,20 +4,23 @@ import PrimaryButton from "../../Components/Buttons/PrimaryButton";
 import SecondaryButton from "../../Components/Buttons/SecondaryButton";
 import Icon from "../../Components/Icon";
 import Typed from 'react-typed';
-import Div100vh from "react-div-100vh";
+
 
 const Home = (props) => {
-const {setActiveItem}= props;
+const {setActiveItem, activeItem}= props;
     return (
-        <Div100vh>
-            <section id="home" className="bg-image">
+            <section
+                id="home"
+                className={`bg-image ${activeItem === "home" && "active"}`}
+                style={activeItem === "home" ? {} : {transform: `translate3d(0, -100%, 0)`}}
+            >
                 <div/>
                 <div className="landing-text-container">
                     <div className="title">Hi there !</div>
                     <div className="heading">I'm <span className="name">Akash Patel</span></div>
                     <div className="sub-title">
                         <Typed
-                            strings={["Full Stack Developer", "Frontend Developer", "Web Designer", "Web Developer",]}
+                            strings={["Full Stack Developer", "Frontend Developer", "Web Designer", "Web Developer","React Js Developer"]}
                             typeSpeed={40}
                             backSpeed={50}
                             loop
@@ -45,7 +48,7 @@ const {setActiveItem}= props;
                     <Icon icon="fa fa-instagram" iconLink="https://www.instagram.com/iamakashpatel"/>
                 </div>
             </section>
-        </Div100vh>
+
     );
 };
 export default Home;

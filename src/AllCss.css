@@ -22,7 +22,7 @@ Version: 1.0
         + About
             - Personal Informations
             - Resume Panels
-            - Skills
+            - Skill
         - Portfolio
         + Blog
             - Latest Posts
@@ -1055,13 +1055,6 @@ body.fullscreendark #main>section#home {
     background-position: center center;
 }
 
-body.fullscreenlight #main>section#home {
-    background-image: url('../../assets/images/large-bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
 body.fullscreenbgimage #main>section#home {
     background-image: url('../../assets/images/large-bg.jpg');
     background-size: cover;
@@ -1495,7 +1488,7 @@ body.light .personal-info ul h6 {
     }
 }
 
-/*** Skills ***/
+/*** Skill ***/
 .skills-title {
     padding-top: 50px;
 }

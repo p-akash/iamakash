@@ -18,6 +18,9 @@ const Navbar = (props) => {
                     <li className={`${activeItem === "about" && "active"}`}>
                         <p onClick={() => setActiveItem("about")}>
                             <span>About</span></p></li>
+                    <li className={`${activeItem === "skill" && "active"}`}>
+                        <p onClick={() => setActiveItem("skill")}>
+                            <span>Skills</span></p></li>
                     <li className={`${activeItem === "portfolio" && "active"}`}>
                         <p onClick={() => setActiveItem("portfolio")}>
                             <span>Portfolio</span></p></li>
@@ -25,9 +28,6 @@ const Navbar = (props) => {
                         <p onClick={() => setActiveItem("contact")}>
                             <span>Contact</span></p>
                     </li>
-                    {/*<li className={`${activeItem === "portfolio" && "active"}`}>*/}
-                    {/*    <p onClick={() => setActiveItem("portfolio")}><span>Blog</span></p>*/}
-                    {/*</li>*/}
                 </ul>
                 <span aria-hidden="true" className="stretchy-nav-bg"/>
             </div>

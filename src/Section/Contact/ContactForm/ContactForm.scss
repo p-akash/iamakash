@@ -18,4 +18,17 @@
   .text-area-width{
     padding-right: 20px;
   }
+  @media only screen and (max-width:940px) {
+    .input-width {
+      width: 100%;
+      padding-right: 0;
+    }
+    .text-area-width{
+      padding-right: 0;
+    }
+  }
+  @media only screen and (max-width:680px) {
+    width: 100%;
+    padding: 15px 10px;
+  }
 }

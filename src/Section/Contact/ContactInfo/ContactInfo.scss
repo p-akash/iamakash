@@ -16,4 +16,12 @@
     margin-bottom: 15px;
     color: $color_title;
   }
+  @media only screen and (max-width:1080px) {
+    padding-left: 0;
+    padding-right: 5px;
+  }
+  @media only screen and (max-width:680px) {
+    width: 100%;
+    padding: 15px 10px;
+  }
 }

@@ -28,6 +28,11 @@ const ContactInfo = () => {
                     icon="fa-envelope"
                     text="patel.akash@outlook.com"
                 />
+                <ContactInfoList
+                    fontSize="22px"
+                    icon="fa-linkedin"
+                    text="linkedin.com/in/akash-a-patel"
+                />
             </div>
         </div>
     );

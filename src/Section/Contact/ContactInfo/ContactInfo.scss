@@ -1,0 +1,19 @@
+@import "../../../assets/css/variables";
+.contact-info{
+  display: inline-grid;
+  padding: 25px;
+  width: 40%;
+  .title{
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    color: $color_title;
+    margin-bottom: 25px;
+    font-weight: 500;
+  }
+  .contact-message {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 15px;
+    color: $color_title;
+  }
+}

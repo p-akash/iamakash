@@ -1,0 +1,18 @@
+.input-box{
+  .input-field{
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    padding: 8px 12px;
+    border: 1px solid #888;
+    transition: .2s;
+  }
+  .input-field:focus{
+    border-radius: 4px;
+  }
+  .text-area{
+    height: 120px;
+  }
+}

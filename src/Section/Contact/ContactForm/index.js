@@ -4,10 +4,15 @@ import InputBox from "../../../Components/InputBox";
 import PrimaryButton from "../../../Components/Buttons/PrimaryButton";
 
 const ContactForm = () => {
-    const [name, setName] = useState("");
-    const onNameChange = (e) => {
-        setName(e.value);
+    const [formData, setFormData] = useState({ name: "", email: "", message:"" });
+    const handleInputChange = e => {
+        const { name, value } = e.target;
+        setFormData(prevState => ({
+            ...prevState,
+            [name]: value
+        }));
     };
+    const onSubmitForm = () =>{}
     return (
         <div className="contact-form">
             <div className="title">
@@ -16,31 +21,34 @@ const ContactForm = () => {
             <div>
                 <div className="input-width name-input">
                     <InputBox
-                        value={name}
-                        onChange={onNameChange}
+                        name="name"
+                        value={formData.name}
+                        onChange={handleInputChange}
                         placeholder="Name"
                     />
                 </div>
                 <div className="input-width">
                     <InputBox
-                        value={name}
-                        onChange={onNameChange}
+                        name="email"
+                        value={formData.email}
+                        onChange={handleInputChange}
                         placeholder="Email"
                     />
                 </div>
                 <div className="text-area-width">
                     <InputBox
-                        value={name}
+                        name="message"
+                        value={formData.message}
                         type="text-area"
-                        onChange={onNameChange}
+                        onChange={handleInputChange}
                         placeholder="Message"
                     />
                 </div>
                 <PrimaryButton
                     text="Send Message"
                     icon="fa fa-paper-plane"
-                    className="margin-x-5"
-                    onClick={()=>{}}
+                    className="cursor-pointer"
+                    onClick={onSubmitForm}
                 />
             </div>
         </div>

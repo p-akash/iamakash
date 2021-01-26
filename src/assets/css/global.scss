@@ -39,7 +39,9 @@ h1,h2,h3,h4,h5,h6 {
   margin-left: $fs_5;
   margin-right: $fs_5;
 }
-
+.cursor-pointer{
+  cursor: pointer;
+}
 .page-animation{
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;

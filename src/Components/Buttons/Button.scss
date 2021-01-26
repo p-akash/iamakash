@@ -17,7 +17,10 @@
   letter-spacing: .5px;
   border: 0;
 }
-
+.btn:hover{
+  background-color: transparent;
+  transition-duration: .6s;
+}
 .btn span {
   position: relative;
   z-index: 2;

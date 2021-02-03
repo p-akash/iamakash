@@ -60,7 +60,7 @@ const ContactForm = () => {
     const onSubmitForm = () =>{
         const isEmpty = validation();
         if(isEmpty){
-            alert(isEmpty)
+            console.log("form Submited")
         }
 
     }

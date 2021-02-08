@@ -60,7 +60,17 @@ const ContactForm = () => {
     const onSubmitForm = () =>{
         const isEmpty = validation();
         if(isEmpty){
-            console.log("form Submited")
+            let url = 'https://contact-fawn.vercel.app/api/contact-akash';
+            let data = formData;
+            fetch(url, {
+                method: 'POST', // or 'PUT'
+                body: JSON.stringify(data), // data can be `string` or {object}!
+                headers:{
+                    'Content-Type': 'application/json'
+                }
+            }).then(res => res.json())
+                .then(response => console.log('Success:', JSON.stringify(response)))
+                .catch(error => console.error('Error:', error));
         }
 
     }

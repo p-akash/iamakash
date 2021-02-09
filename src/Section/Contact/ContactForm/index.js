@@ -68,19 +68,19 @@ const ContactForm = (props) => {
     const onSubmitForm = () =>{
         const isEmpty = validation();
         if(isEmpty){
-            // const url = 'https://contact-fawn.vercel.app/api/contact-akash'
+            const url = 'https://contact-fawn.vercel.app/api/contact-akash'
             setModalOpen(true);
-        //     fetch(url, {
-        //         method: 'POST', // or 'PUT'
-        //         body: JSON.stringify(formData), // data can be `string` or {object}!
-        //         headers:{
-        //             'Content-Type': 'application/json'
-        //         }
-        //     }).then(res => res.json())
-        //         .then(response => {
-        //             console.log('Success:', JSON.stringify(response));
-        //         })
-        //         .catch(error => console.error('Error:', error));
+            fetch(url, {
+                method: 'POST', // or 'PUT'
+                body: JSON.stringify(formData), // data can be `string` or {object}!
+                headers:{
+                    'Content-Type': 'application/json'
+                }
+            }).then(res => res.json())
+                .then(response => {
+                    console.log('Success:', JSON.stringify(response));
+                })
+                .catch(error => console.error('Error:', error));
          }
 
     }

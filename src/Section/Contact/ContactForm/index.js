@@ -1,12 +1,20 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import "./ContactForm.scss";
 import InputBox from "../../../Components/InputBox";
 import PrimaryButton from "../../../Components/Buttons/PrimaryButton";
+import Modal from "../../../Components/Modal";
 
-const ContactForm = () => {
+const ContactForm = (props) => {
+    const {isModalOpen,setModalOpen}  = props;
+    useEffect(()=>{
+        if(isModalOpen){
+            setTimeout(()=>{
+                // setModalOpen(false)
+            },3000)
+        }
+    },[isModalOpen, setModalOpen])
     const [formData, setFormData] = useState({ name: "", email: "", message:"" });
     const [validationError, setValidationError] = useState({ name: "", email: "", message:"" });
-
     const validation = () =>{
         setValidationError({ name: "", email: "", message:"" });
         const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -60,22 +68,25 @@ const ContactForm = () => {
     const onSubmitForm = () =>{
         const isEmpty = validation();
         if(isEmpty){
-            let url = 'https://contact-fawn.vercel.app/api/contact-akash';
-            let data = formData;
-            fetch(url, {
-                method: 'POST', // or 'PUT'
-                body: JSON.stringify(data), // data can be `string` or {object}!
-                headers:{
-                    'Content-Type': 'application/json'
-                }
-            }).then(res => res.json())
-                .then(response => console.log('Success:', JSON.stringify(response)))
-                .catch(error => console.error('Error:', error));
-        }
+            // const url = 'https://contact-fawn.vercel.app/api/contact-akash'
+            setModalOpen(true);
+        //     fetch(url, {
+        //         method: 'POST', // or 'PUT'
+        //         body: JSON.stringify(formData), // data can be `string` or {object}!
+        //         headers:{
+        //             'Content-Type': 'application/json'
+        //         }
+        //     }).then(res => res.json())
+        //         .then(response => {
+        //             console.log('Success:', JSON.stringify(response));
+        //         })
+        //         .catch(error => console.error('Error:', error));
+         }
 
     }
     return (
         <div className="contact-form">
+            <Modal visible={isModalOpen}/>
             <div className="title">
                 Message Me
             </div>
@@ -119,4 +130,4 @@ const ContactForm = () => {
     );
 };
 
-export default ContactForm
+export default ContactForm;

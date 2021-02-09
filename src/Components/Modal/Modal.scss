@@ -1,0 +1,73 @@
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 99; /* Sit on top */
+  //padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  backdrop-filter: blur(4px);
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  z-index: 100;
+  position: relative;
+  background-color: #222;
+  top: 35%;
+  margin:  0 auto;
+  padding: 0;
+  //border: 1px solid #888;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:0; opacity:0}
+  to {top:35%; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:0; opacity:0}
+  to {top:35%; opacity:1}
+}
+
+
+.modal-header {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 25px;
+}
+
+.modal-title {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  font-size: 24px;
+  text-transform: none;
+}
+
+.modal-message {
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  text-transform: none;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  margin: 10px auto 5px;
+}
+
+.modal-body {padding: 5px 16px 25px;}
+
+

@@ -9,7 +9,7 @@ const ContactForm = (props) => {
     useEffect(()=>{
         if(isModalOpen){
             setTimeout(()=>{
-                // setModalOpen(false)
+                setModalOpen(false)
             },3000)
         }
     },[isModalOpen, setModalOpen])

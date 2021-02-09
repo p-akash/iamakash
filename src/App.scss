@@ -1,4 +1,5 @@
 @import "assets/css/variables";
+
 .main {
   position: absolute;
   width: 100%;
@@ -42,6 +43,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+  }
+
+  @media only screen and (max-width: 500px) {
+    section#home {
+      background-image: url('assets/images/mobile-bg.jpg');
+    }
   }
 
   section#home:after {

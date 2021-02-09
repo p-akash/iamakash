@@ -27,10 +27,9 @@
     transition: transform .6s ease;
   }
 
-
   section#home {
     min-height: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('assets/images/large-bg.jpg');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
     background-size: cover;
     display: flex;
     flex-direction: column;

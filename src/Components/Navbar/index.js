@@ -35,4 +35,4 @@ const Navbar = (props) => {
     );
 };
 
-export default Navbar;
+export default React.memo(Navbar);

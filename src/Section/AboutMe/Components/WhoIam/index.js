@@ -9,4 +9,4 @@ const WhoIam = () => {
     );
 };
 
-export default WhoIam;
+export default React.memo(WhoIam);

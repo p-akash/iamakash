@@ -10,4 +10,4 @@ const Icon = (props) => {
     );
 };
 
-export default Icon;
+export default React.memo(Icon);

@@ -15,4 +15,4 @@ const ContactInfoList = (props) => {
     );
 };
 
-export default ContactInfoList;
+export default React.memo(ContactInfoList);

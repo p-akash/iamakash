@@ -51,4 +51,4 @@ const {setActiveItem, activeItem}= props;
 
     );
 };
-export default Home;
+export default React.memo(Home);

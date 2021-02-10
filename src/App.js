@@ -7,6 +7,13 @@ import Contact from "./Section/Contact";
 import Skill from "./Section/Skill";
 import "./App.scss"
 
+// const Home = React.lazy(() => import('./Section/Home'));
+// const About = React.lazy(() => import('./Section/AboutMe'));
+// const Portfolio = React.lazy(() => import('./Section/Portfolio'));
+// const Contact = React.lazy(() => import('./Section/Contact'));
+// const Skill = React.lazy(() => import('./Section/Skill'));
+
+
 function App() {
     const [activeItem, setActiveItem] = useState("home");
     const [isOpenNavBar, setIsOpenNavBar] = useState(false);

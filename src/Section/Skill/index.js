@@ -17,4 +17,4 @@ const {activeItem}= props;
 
     );
 };
-export default Skill;
+export default React.memo(Skill);

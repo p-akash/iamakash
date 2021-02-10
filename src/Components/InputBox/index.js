@@ -30,4 +30,4 @@ const InputBox = (props) => {
     );
 };
 
-export default InputBox;
+export default React.memo(InputBox);

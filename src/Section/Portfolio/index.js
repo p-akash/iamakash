@@ -12,4 +12,4 @@ const Portfolio = (props) => {
         </section>
     );
 };
-export default Portfolio;
+export default React.memo(Portfolio);

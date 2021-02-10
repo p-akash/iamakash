@@ -22,4 +22,4 @@ const Contact = (props) => {
         </section>
     );
 };
-export default Contact;
+export default React.memo(Contact);

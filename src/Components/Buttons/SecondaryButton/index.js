@@ -14,4 +14,4 @@ const SecondaryButton = (props) => {
     );
 };
 
-export default SecondaryButton;
+export default React.memo(SecondaryButton);

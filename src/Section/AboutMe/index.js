@@ -4,6 +4,9 @@ import PageHeading from "../../Components/PageHeading";
 import Logo from "../../Components/Logo";
 import Container from "../../Components/Containter";
 import WhoIam from "./Components/WhoIam";
+import Experience from "./Components/Experience";
+import Education from "./Components/Education";
+
 
 const About = (props) => {
     const {activeItem} = props;
@@ -14,11 +17,14 @@ const About = (props) => {
             className={`about-me-section ${activeItem === "about" && "active"}`} >
                 <Logo/>
                <PageHeading text1="About" text2="Me" subtitle="Who Am I ?"/>
-               <div className="text-center">
                    <Container>
-                       <WhoIam/>
+                       <div className="text-center">
+                           <WhoIam/>
+                       </div>
+                       <br/>
+                       <Experience/>
+                       <Education/>
                    </Container>
-               </div>
         </section>
     );
 };

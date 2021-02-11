@@ -1,0 +1,18 @@
+.experience {
+  padding: 12px;
+  width: 65%;
+  display: inline-grid;
+  .list-item{
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  @media only screen and (max-width: 1120px) {
+    width: 55%;
+  }
+  @media only screen and (max-width: 880px) {
+    width: 50%;
+  }
+  @media only screen and (max-width: 725px) {
+    width: 100%;
+  }
+}

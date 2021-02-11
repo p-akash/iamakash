@@ -1,0 +1,43 @@
+@import "../../assets/css/variables";
+.process-bar {
+  color: $color_white;
+  border-left: 2px solid $color_primary;
+  padding-left: 20px;
+  position: relative;
+  .title {
+    text-transform: none;
+    line-height: 18px;
+  }
+  .sub-title {
+    margin-top: 5px;
+    text-transform: none;
+    color: $color_primary;
+  }
+  .duration {
+    margin-top: 5px;
+  }
+  .duration-time{
+    display: inline-flex;
+    line-height: 15px;
+  }
+  .place{
+    display: inline-flex;
+    line-height: 15px;
+  }
+  .content{
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+.process-bar::before{
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: $color_bg;
+  border: 2px solid $color_primary;
+}

@@ -9,7 +9,7 @@ import Education from "./Components/Education";
 
 
 const About = (props) => {
-    const {activeItem} = props;
+    const {activeItem, setActiveItem} = props;
     const onScroll = () => {
         console.log(window.document.getElementById("about").scrollHeight, window.document.getElementById("about").offsetHeight)
     };
@@ -24,7 +24,7 @@ const About = (props) => {
                <PageHeading text1="About" text2="Me" subtitle="Who Am I ?"/>
                    <Container>
                        <div className="mb-25">
-                           <WhoIam/>
+                           <WhoIam setActiveItem={setActiveItem}/>
                        </div>
                        <Experience/>
                        <Education/>

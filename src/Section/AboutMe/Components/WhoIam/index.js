@@ -1,6 +1,7 @@
 import React from "react";
 import "./WhoIam.scss";
-const WhoIam = () => {
+import Link from "../../../../Components/Link";
+const WhoIam = ({setActiveItem}) => {
     return (
         <div className="who-iam">
             {/*<div className="title">Who am i ?</div>*/}
@@ -19,10 +20,14 @@ const WhoIam = () => {
                     If you are looking for a Web Developer? Feel free to contact me at any time. I would be happier to offer you my services.
                 </div>
                 <div className="paragraph">
-                    Your action items: Hire me, Contact me or Tell me Your Secrets.
+                    Your action items:{" "}
+                    <Link text="Hire me" onClick={()=>setActiveItem("contact")}/>,{" "}
+                    <Link text="Contact me" onClick={()=>setActiveItem("contact")}/>{" "}or{" "}
+                    <Link text="Tell me Your Secrets." onClick={()=>setActiveItem("contact")}/>
+
                 </div>
                 <div className="paragraph">
-                    Thanks!
+                    Thank you!
                 </div>
             </div>
         </div>

@@ -29,6 +29,7 @@ function App() {
                     activeItem={activeItem}
                 />
                 <About
+                    setActiveItem={setActiveItem}
                     activeItem={activeItem}
                 />
                 <Skill

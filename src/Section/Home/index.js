@@ -8,6 +8,7 @@ import Typed from 'react-typed';
 
 const Home = (props) => {
 const {setActiveItem, activeItem}= props;
+
     return (
             <section
                 id="home"

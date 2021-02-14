@@ -1,9 +1,19 @@
 @import "../../../../assets/css/variables";
 .who-iam{
+  margin: 20px 15px 0;
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
   .title{
     color: $color_title;
   }
   .content{
     color: $color_text;
+    font-size: 16px;
+  }
+  .paragraph{
+    margin-top: 10px;
+  }
+  @media only screen and (max-width: 500px) {
+    margin: 20px 5px 0;
   }
 }

@@ -18,10 +18,7 @@
   letter-spacing: .5px;
   border: 0;
 }
-.btn:hover{
-  background-color: transparent;
-  transition-duration: .6s;
-}
+
 .btn span {
   position: relative;
   z-index: 2;
@@ -40,14 +37,7 @@
   z-index: 1;
 }
 
-.btn:hover:before {
-  width: 180%;
-}
 
-.btn:hover {
-  box-shadow: none;
-  color: $color_white;
-}
 
 .btn i {
   padding-right: 11px;
@@ -67,10 +57,24 @@
   color: #fff;
 }
 
-.btn.btn-secondary:before {
-  background: $color_secondary;
-}
 
+
+@media (hover: hover) and (pointer: fine) {
+  .btn.btn-secondary:before {
+    background: $color_secondary;
+  }
+  .btn:hover:before {
+    width: 180%;
+  }
+  .btn:hover{
+    background-color: transparent;
+    transition-duration: .6s;
+  }
+  .btn:hover {
+    box-shadow: none;
+    color: $color_white;
+  }
+}
 
 
 

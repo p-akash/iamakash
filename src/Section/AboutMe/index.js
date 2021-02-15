@@ -10,15 +10,11 @@ import Education from "./Components/Education";
 
 const About = (props) => {
     const {activeItem, setActiveItem} = props;
-    const onScroll = () => {
-        console.log(window.document.getElementById("about").scrollHeight, window.document.getElementById("about").offsetHeight)
-    };
     return (
         <section
             id="about"
             style={activeItem === "about" ? {} :{transform: `translate3d(0, ${activeItem === "home" ? "100%" : "-100%"}, 0)`}}
             className={`about-me-section ${activeItem === "about" && "active"}`}
-            onScroll={onScroll}
         >
                 <Logo/>
                <PageHeading text1="About" text2="Me" subtitle="Who Am I ?"/>

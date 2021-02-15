@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
+import {createBrowserHistory} from "history";
 import Navbar from "./Components/Navbar";
 import Home from "./Section/Home";
 import About from "./Section/AboutMe";
@@ -10,6 +11,18 @@ import "./App.scss"
 function App() {
     const [activeItem, setActiveItem] = useState("home");
     const [isOpenNavBar, setIsOpenNavBar] = useState(false);
+    const history = createBrowserHistory()
+    useEffect(()=>{
+        history.push(activeItem === "home" ? "/" : activeItem)
+    },[activeItem,history]);
+    useEffect(()=>{
+        let unListen = history.listen(({ action, location }) => {
+            console.log(action, location.pathname)
+            setActiveItem(location.pathname === "/" ? "home" :location.pathname.substring(1))
+        });
+        return(()=> unListen());
+    },[history]);
+
     const closeNav = () => {
         if (isOpenNavBar) {
             setIsOpenNavBar(false);

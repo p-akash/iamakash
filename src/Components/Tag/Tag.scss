@@ -1,5 +1,6 @@
+@import "../../assets/css/variables";
 .custom-tag {
-  background: #7A6BEF;
+  background: $color_primary;
   border-radius: 3px 0 0 3px;
   color: #fff;
   cursor: pointer;
@@ -28,7 +29,7 @@
 .custom-tag::after {
   background: #111111;
   border-bottom: 13px solid transparent;
-  border-left: 10px solid #7A6BEF;
+  border-left: 10px solid $color_primary;
   border-top: 13px solid transparent;
   content: '';
   position: absolute;

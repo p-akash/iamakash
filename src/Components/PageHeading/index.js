@@ -8,7 +8,7 @@ const PageHeading = (props) => {
             <h2 className="page-title">
                 {text1}{" "}<span className="colored-text">{text2}</span>
             </h2>
-            <h6 className="page-subtitle">{subtitle}</h6>
+            <div className="page-subtitle">{subtitle}</div>
         </div>
 
     );

@@ -70,6 +70,7 @@ const ContactForm = (props) => {
         if(isEmpty){
             const url = 'https://contact-fawn.vercel.app/api/contact-akash'
             setModalOpen(true);
+            setFormData({ name: "", email: "", message:"" });
             fetch(url, {
                 method: 'POST', // or 'PUT'
                 body: JSON.stringify(formData), // data can be `string` or {object}!

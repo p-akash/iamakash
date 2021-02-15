@@ -17,7 +17,6 @@ function App() {
     },[activeItem,history]);
     useEffect(()=>{
         let unListen = history.listen(({ action, location }) => {
-            console.log(action, location.pathname)
             setActiveItem(location.pathname === "/" ? "home" :location.pathname.substring(1))
         });
         return(()=> unListen());

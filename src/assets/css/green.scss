@@ -1,7 +1,6 @@
 @import "_variables.scss";
 .nav-container > div > ul li.active p,
 .nav-container > div > ul li:hover p,
-.btn.btn-secondary,
 .page-title h2 span,
 .back-mobile,
 .project-info-container .projects-info h3,
@@ -25,13 +24,13 @@ body.blog.dark .comments-list .comment-reply:hover,
 .resume-items .item .card-header .year i.fa-caret-right,
 .badges h3 span,
 .chart-bar>.percent {
-    color: $color_primary;
+    color: $color_primary_2;
 }
 .cd-stretchy-nav.nav-is-visible ul li.active p,
 .cd-stretchy-nav.nav-is-visible ul li.active p span,
 .cd-stretchy-nav.nav-is-visible ul li p:hover,
 .cd-stretchy-nav.nav-is-visible ul li p:hover span {
-    color: $color_primary !important;
+    color: $color_primary_2 !important;
 }
 .chart-bar>.item-progress,
 .navigation li > div p span:after,

@@ -11,7 +11,8 @@ import "./App.scss"
 function App() {
     const [activeItem, setActiveItem] = useState("home");
     const [isOpenNavBar, setIsOpenNavBar] = useState(false);
-    const history = createBrowserHistory()
+    const history = createBrowserHistory();
+
     useEffect(()=>{
         history.push(activeItem === "home" ? "/" : activeItem)
     },[activeItem,history]);

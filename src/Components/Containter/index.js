@@ -6,8 +6,7 @@ const Container = (props) => {
     return (
         <div className="container">
             {children}
-        </div>)
-        ;
+        </div>);
 };
 
 export default React.memo(Container);

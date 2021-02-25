@@ -1,0 +1,50 @@
+@import "../../assets/css/variables";
+.card{
+  border-radius: 8px;
+  display: inline-block;
+  width: 100%;
+  background-color: $color_bg;
+  margin: 10px;
+  img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+  .card-heading{
+    margin: 0 10px 0;
+    cursor: default;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: $color_white;
+  }
+  .card-sub-heading{
+    font-size: 14px;
+    cursor: default;
+    margin: 0 10px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: $color_text;
+  }
+  .card-external-link{
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px 10px 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: $color_primary_2;
+    line-height: 11px;
+    .text{
+      display: table-cell;
+      vertical-align: top;
+    }
+    .icon{
+      display: table-cell;
+      i{
+        margin-left: 5px;
+      }
+    }
+  }
+}

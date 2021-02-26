@@ -1,24 +1,35 @@
 import React from "react";
 import "./Card.scss";
-import Image from "../../assets/images/large-bg.jpg"
-const Card = () => {
+const Card = ({portfolio}) => {
     return (
         <div className="card">
-            <img src={Image} alt="portfolio-img"/>
+            <img src={portfolio.img} alt="portfolio-img"/>
             <div className="card-heading">
-                NeoBenk
+                {portfolio.projectName}
             </div>
             <div className="card-sub-heading">
-                Website
+                {portfolio.projectType}
             </div>
-            <div className="card-external-link" onClick={()=>window.open("https://neobenk.com", "_blank")}>
+            { portfolio.externalLink1Link &&
+            <div className="card-external-link" onClick={()=>window.open(portfolio.externalLink1Link, "_blank")}>
                <div className="text">
-                   neobenk.com
+                   {portfolio.externalLink1Link}
                </div>
                 <div className="icon">
                      <i className="fa fa-external-link"/>
                 </div>
             </div>
+            }
+            {portfolio.externalLink2Link &&
+            <div className="card-external-link" onClick={()=>window.open(portfolio.externalLink2Link, "_blank")}>
+                <div className="text">
+                    {portfolio.externalLink2text}
+                </div>
+                <div className="icon">
+                    <i className="fa fa-external-link"/>
+                </div>
+            </div>
+            }
         </div>
     );
 

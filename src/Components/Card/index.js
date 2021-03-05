@@ -1,9 +1,9 @@
 import React from "react";
 import "./Card.scss";
-const Card = ({portfolio}) => {
+const Card = ({portfolio, onImageClick}) => {
     return (
         <div className="card">
-            <img src={portfolio.img} alt="portfolio-img"/>
+            <img src={portfolio.img} alt="portfolio-img" onClick={()=>onImageClick()}/>
             <div className="card-text">
                 <div className="card-heading">
                     {portfolio.projectName}

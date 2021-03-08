@@ -13,7 +13,7 @@ const portfolioList = [
         img: neoBankThumbnail,
         projectName: "NeoBank",
         projectType: "Website",
-        objectFit:"top left",
+        objectFit: "top left",
         externalLink1text: "neobenk.com",
         externalLink1Link: "https://neobenk.com"
     },
@@ -21,7 +21,7 @@ const portfolioList = [
         img: neoBankAppThumbnail,
         projectName: "NeoBank",
         projectType: "Web Application",
-        objectFit:"top center",
+        objectFit: "top center",
         externalLink1text: "secure.neobenk.com",
         externalLink1Link: "https://secure.neobenk.com",
         externalLink2text: "app.neobenk.com",
@@ -30,20 +30,30 @@ const portfolioList = [
     {
         img: emailTemplateThumbnail,
         projectName: "NeoBank",
-        objectFit:"top center",
+        objectFit: "top center",
         projectType: "Email Templates"
     },
     {
         img: ImuThumbnail,
-        objectFit:"top center",
+        objectFit: "top center",
         projectName: "Imu",
         projectType: "Web Application"
     }]
 const images = [
     ['//placekitten.com/1500/500',
         '//placekitten.com/4000/3000'],
-    ['//placekitten.com/800/1200',
-        '//placekitten.com/1500/1500'],
+    ["https://i.ibb.co/TvtJCGL/00-Launch-screen.jpg",
+        "https://i.ibb.co/KWCy6Nq/01-Email-Address-02.jpg",
+        "https://i.ibb.co/d0NVNBD/02-Confirm-account-number.jpg",
+        "https://i.ibb.co/fSyBt8B/01-Banking-Account.png",
+        "https://i.ibb.co/JxvW5LX/02-Transactions.jpg",
+        "https://i.ibb.co/gZnW97m/02-Enter-amount-select-currency.png",
+        "https://i.ibb.co/WxyRY0H/02-Enter-amount-bitcoin-currency.jpg",
+        "https://i.ibb.co/QvRKp2r/02-Enter-amount-bitcoin-currency-1.jpg",
+        "https://i.ibb.co/NScXWFH/02-Payment-Overlay.jpg",
+        "https://i.ibb.co/BKXd8D2/Transaction-details-Request-sent.jpg",
+        "https://i.ibb.co/nQN0626/01-Cancel-Payment-2.jpg",
+        "https://i.ibb.co/N2dLnZG/Menu.jpg"],
     ["https://i.ibb.co/qDLtQnY/NBN-User-01.png",
         "https://i.ibb.co/18zbTds/Recipient-got-5-Lead-02.png",
         "https://i.ibb.co/WWgk2JL/Invite-freineds-User-01.png"],

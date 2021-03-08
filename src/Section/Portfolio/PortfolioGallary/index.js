@@ -40,8 +40,10 @@ const portfolioList = [
         projectType: "Web Application"
     }]
 const images = [
-    ['//placekitten.com/1500/500',
-        '//placekitten.com/4000/3000'],
+    ["https://i.ibb.co/nwn8p9y/screencapture-neobenk-intl-personal-2021-03-08-12-18-14.jpg",
+        "https://i.ibb.co/dj72nPM/screencapture-neobenk-intl-business-2021-03-08-12-19-31.jpg",
+        "https://i.ibb.co/TKvc1HK/screencapture-neobenk-intl-partners-2021-03-08-12-20-01.jpg",
+        "https://i.ibb.co/myKp1XF/Newsroom.jpg"],
     ["https://i.ibb.co/TvtJCGL/00-Launch-screen.jpg",
         "https://i.ibb.co/KWCy6Nq/01-Email-Address-02.jpg",
         "https://i.ibb.co/d0NVNBD/02-Confirm-account-number.jpg",

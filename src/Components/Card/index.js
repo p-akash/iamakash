@@ -1,9 +1,10 @@
 import React from "react";
 import "./Card.scss";
 const Card = ({portfolio, onImageClick}) => {
+    console.log(portfolio.objectFit);
     return (
         <div className="card">
-            <img src={portfolio.img} alt="portfolio-img" onClick={()=>onImageClick()}/>
+            <img src={portfolio.img} style={{objectPosition:portfolio.objectFit}} alt="portfolio-img" onClick={()=>onImageClick()}/>
             <div className="card-text">
                 <div className="card-heading">
                     {portfolio.projectName}

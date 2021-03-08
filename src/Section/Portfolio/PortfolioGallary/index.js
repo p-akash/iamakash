@@ -13,6 +13,7 @@ const portfolioList = [
         img: neoBankThumbnail,
         projectName: "NeoBank",
         projectType: "Website",
+        objectFit:"top left",
         externalLink1text: "neobenk.com",
         externalLink1Link: "https://neobenk.com"
     },
@@ -20,6 +21,7 @@ const portfolioList = [
         img: neoBankAppThumbnail,
         projectName: "NeoBank",
         projectType: "Web Application",
+        objectFit:"top center",
         externalLink1text: "secure.neobenk.com",
         externalLink1Link: "https://secure.neobenk.com",
         externalLink2text: "app.neobenk.com",
@@ -28,10 +30,12 @@ const portfolioList = [
     {
         img: emailTemplateThumbnail,
         projectName: "NeoBank",
+        objectFit:"top center",
         projectType: "Email Templates"
     },
     {
         img: ImuThumbnail,
+        objectFit:"top center",
         projectName: "Imu",
         projectType: "Web Application"
     }]

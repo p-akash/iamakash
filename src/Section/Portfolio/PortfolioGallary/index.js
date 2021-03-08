@@ -72,6 +72,7 @@ const PortfolioGallery = () => {
     const [selectedIndex, setSelectedIndex] = useState(0);
     const openLightbox = index => {
         setIsOpen(true);
+        setPhotoIndex(0);
         setSelectedIndex(index);
     };
     return (

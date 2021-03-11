@@ -1,10 +1,9 @@
 import React from "react";
-import "./Home.scss"
 import PrimaryButton from "../../Components/Buttons/PrimaryButton";
 import SecondaryButton from "../../Components/Buttons/SecondaryButton";
 import Icon from "../../Components/Icon";
 import Typed from 'react-typed';
-
+import "./Home.scss"
 
 const Home = (props) => {
 const {setActiveItem, activeItem}= props;
@@ -52,4 +51,5 @@ const {setActiveItem, activeItem}= props;
 
     );
 };
+
 export default React.memo(Home);

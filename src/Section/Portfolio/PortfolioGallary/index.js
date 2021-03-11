@@ -1,12 +1,12 @@
 import React, {useState} from "react";
 import Card from "../../../Components/Card";
-import "./PortfolioGallary.scss";
 import ImuThumbnail from "../../../assets/images/ImuThumbnail.jpg"
 import neoBankThumbnail from "../../../assets/images/neoBankThumbnail.png"
 import neoBankAppThumbnail from "../../../assets/images/neobankAppThumbnail.png"
 import emailTemplateThumbnail from "../../../assets/images/emailTemplateThumbnail.png"
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
+import "./PortfolioGallary.scss";
 
 const portfolioList = [
     {
@@ -39,6 +39,7 @@ const portfolioList = [
         projectName: "Imu",
         projectType: "Web Application"
     }]
+
 const images = [
     ["https://i.ibb.co/nwn8p9y/screencapture-neobenk-intl-personal-2021-03-08-12-18-14.jpg",
         "https://i.ibb.co/dj72nPM/screencapture-neobenk-intl-business-2021-03-08-12-19-31.jpg",

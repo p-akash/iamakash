@@ -4,6 +4,7 @@ import Logo from "../../Components/Logo";
 import PortfolioGallery from "./PortfolioGallary";
 import Container from "../../Components/Containter";
 import "./Portfolio.scss"
+
 const Portfolio = (props) => {
     const {activeItem} = props;
     const menuItem = ["home", "about", "skill"]
@@ -19,4 +20,5 @@ const Portfolio = (props) => {
         </section>
     );
 };
+
 export default React.memo(Portfolio);

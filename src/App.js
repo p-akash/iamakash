@@ -33,17 +33,21 @@ function App() {
     
     return (
         <div onClick={closeNav}>
+        
             <Navbar
                 activeItem={activeItem}
                 setActiveItem={setActiveItem}
                 isOpenNavBar={isOpenNavBar}
                 setIsOpenNavBar={setIsOpenNavBar}
             />
+        
             <div className="main">
+        
                 <Home
                     setActiveItem={setActiveItem}
                     activeItem={activeItem}
                 />
+        
                 <About
                     setActiveItem={setActiveItem}
                     activeItem={activeItem}

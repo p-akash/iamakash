@@ -1,15 +1,15 @@
 import React from "react";
 import Title from "../../../../Components/Title";
 import ProcessBar from "../../../../Components/ProcessBar";
-import "./Education.scss"
 import Skills from "../Skills";
+import "./Education.scss"
 
 const Education = () => {
     const frontEndSkills = ["HTML", "CSS", "SCSS", "JavaScript", "TypeScript", "JSON", "React.js", "Redux",
         "Redux-saga", "Next.js", "jQuery",
         "Bootstrap", "Ant Design", "Material UI",
         "Semantic UI"];
-    const backEndSkills =["Node.js", "Express.js"];
+    const backEndSkills = ["Node.js", "Express.js"];
     const databaseSkills = ["MongoDB", "MySQL", "MSSQL"];
     return (
         <div className="education">
@@ -23,7 +23,8 @@ const Education = () => {
                 skillTitle="Back-End"
                 skillList={backEndSkills}
                 className="mb-10"
-            /><Skills
+            />
+            <Skills
                 skillTitle="Database"
                 skillList={databaseSkills}
             />

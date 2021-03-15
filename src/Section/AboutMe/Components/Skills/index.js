@@ -1,6 +1,6 @@
 import React from "react";
-import "./Skills.scss";
 import Tag from "../../../../Components/Tag";
+import "./Skills.scss";
 
 const Skills = props => {
     const {skillTitle, skillList, className} = props;

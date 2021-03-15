@@ -4,7 +4,7 @@ import ProcessBar from "../../../../Components/ProcessBar";
 import Title from "../../../../Components/Title";
 
 const Experience = () => {
-    return(
+    return (
         <div className="experience">
             <Title title="Experience"/>
             <ProcessBar
@@ -14,9 +14,14 @@ const Experience = () => {
                 place="Remote"
                 className="mb-25"
             >
-                <div className="mb-10 mt-10">NeoBenk, an online-only multinational financial institution offering various products, including interest-bearing personal accounts, business accounts, Line of credit, peer-to-peer payments, crypto trading, and more.</div>
+                <div className="mb-10 mt-10">NeoBenk, an online-only multinational financial institution offering
+                    various products, including interest-bearing personal accounts, business accounts, Line of credit,
+                    peer-to-peer payments, crypto trading, and more.
+                </div>
                 <ul className="list-item">
-                    <li>Designed, developed and API integrated for secure and responsive NeoBenk single page Web app using React.js, Redux-saga, Bootstrap, Material UI, HTML, SCSS, Axios.</li>
+                    <li>Designed, developed and API integrated for secure and responsive NeoBenk single page Web app
+                        using React.js, Redux-saga, Bootstrap, Material UI, HTML, SCSS, Axios.
+                    </li>
                     <li>Identify UI problems and bugs and devise elegant solutions.</li>
                     <li>Designed and developed NeoBenk website and Email templates.</li>
                     <li>neobenk.com, secure.neobenk.com</li>
@@ -30,7 +35,8 @@ const Experience = () => {
                 className="mb-25"
             >
                 <div className="mt-10 mb-10">Software development company and complete IT solution
-                    provider.</div>
+                    provider.
+                </div>
                 <ul className="list-item">
                     <li>Designed, developed 8+ single page React applications.</li>
                 </ul>

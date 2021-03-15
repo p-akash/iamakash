@@ -1,10 +1,11 @@
 import React from "react";
-import "./WhoIam.scss";
 import Link from "../../../../Components/Link";
+import "./WhoIam.scss";
+
 const WhoIam = ({setActiveItem}) => {
     return (
         <div className="who-iam">
-            {/*<div className="title">Who am i ?</div>*/}
+
             <div className="content">
              Hi There 👋
                 <div className="paragraph">

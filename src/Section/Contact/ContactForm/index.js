@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
-import "./ContactForm.scss";
 import InputBox from "../../../Components/InputBox";
 import PrimaryButton from "../../../Components/Buttons/PrimaryButton";
 import Modal from "../../../Components/Modal";
+import "./ContactForm.scss";
 
 const ContactForm = (props) => {
     const {isModalOpen,setModalOpen}  = props;

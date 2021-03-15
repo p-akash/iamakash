@@ -9,6 +9,7 @@ import Skill from "./Section/Skill";
 import "./App.scss"
 
 function App() {
+    
     const [activeItem, setActiveItem] = useState("home");
     const [isOpenNavBar, setIsOpenNavBar] = useState(false);
     const history = createBrowserHistory();
@@ -16,6 +17,7 @@ function App() {
     useEffect(()=>{
         history.push(activeItem === "home" ? "/" : activeItem)
     },[activeItem,history]);
+    
     useEffect(()=>{
         let unListen = history.listen(({ action, location }) => {
             setActiveItem(location.pathname === "/" ? "home" :location.pathname.substring(1))
@@ -28,19 +30,24 @@ function App() {
             setIsOpenNavBar(false);
         }
     };
+    
     return (
         <div onClick={closeNav}>
+        
             <Navbar
                 activeItem={activeItem}
                 setActiveItem={setActiveItem}
                 isOpenNavBar={isOpenNavBar}
                 setIsOpenNavBar={setIsOpenNavBar}
             />
+        
             <div className="main">
+        
                 <Home
                     setActiveItem={setActiveItem}
                     activeItem={activeItem}
                 />
+        
                 <About
                     setActiveItem={setActiveItem}
                     activeItem={activeItem}
@@ -52,7 +59,6 @@ function App() {
                 <Contact activeItem={activeItem}/>
             </div>
         </div>
-
     );
 }
 

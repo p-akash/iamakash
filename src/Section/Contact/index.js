@@ -5,6 +5,7 @@ import Container from "../../Components/Containter";
 import ContactForm from "./ContactForm";
 import ContactInfo from "./ContactInfo";
 import "./Contact.scss";
+
 const Contact = (props) => {
     const {activeItem} = props;
     const [isModalOpen, setModalOpen] = useState(false);

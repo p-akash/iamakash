@@ -1,5 +1,4 @@
 import React from "react";
-import "./AboutMe.scss"
 import PageHeading from "../../Components/PageHeading";
 import Logo from "../../Components/Logo";
 import Container from "../../Components/Containter";

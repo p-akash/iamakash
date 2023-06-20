@@ -37,7 +37,7 @@ const {setActiveItem, activeItem}= props;
                             text="Resume"
                             icon="fa fa-download"
                             className="margin-x-5"
-                            onClick={() => window.open("https://drive.google.com/u/0/uc?id=1m40kIpPss6CcB2AG171DM63bwYQKkCiU&export=download", "_blank")}
+                            onClick={() => window.open("https://drive.google.com/u/0/uc?id=1dJRS4TZONMYANGzw7SrfYpCvJhwBsS_h&export=download", "_blank")}
                         />
                     </div>
                 </div>

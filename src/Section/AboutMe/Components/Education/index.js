@@ -30,6 +30,15 @@ const Education = () => {
             />
             <Title title="Education" className="mt-10"/>
             <ProcessBar
+                title="Msc in Big Data Analytics"
+                subTitle="University of Derby"
+                duration="2022 - 2023"
+                place="Derby, United Kingdom"
+            >
+                {/*<div className="mt-10">With Distinction</div>*/}
+                <br/>
+            </ProcessBar>
+            <ProcessBar
                 title="Master Of Computer Application"
                 subTitle="Uka Tarsadia University"
                 duration="2013 - 2015"
@@ -37,6 +46,8 @@ const Education = () => {
             >
                 <div className="mt-10">With 6.43 CGPA</div>
             </ProcessBar>
+
+
 
         </div>
     );

@@ -26,6 +26,7 @@ const Experience = () => {
                     <li>Designed and developed NeoBenk website and Email templates.</li>
                     <li>neobenk.com, secure.neobenk.com</li>
                 </ul>
+                <br/>
             </ProcessBar>
             <ProcessBar
                 title="Full stack Web Developer"
@@ -40,6 +41,7 @@ const Experience = () => {
                 <ul className="list-item">
                     <li>Designed, developed 8+ single page React applications.</li>
                 </ul>
+                <br/>
             </ProcessBar>
             <ProcessBar
                 title="Frontend Developer"
